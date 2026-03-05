@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d9f966-2a4d-4175-8d69-a6f020814303" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bai_tap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_2b.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_4b.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_5b.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="61d9f966-2a4d-4175-8d69-a6f020814303" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +49,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\codegym\module1\c0226g1\ss5_form_table\bai_tap\bai_5" />
+      <recent name="C:\codegym\module1\c0226g1\ss5_form_table\bai_tap\bai_4" />
+      <recent name="C:\codegym\module1\c0226g1\ss5_form_table\bai_tap\bai_3" />
+      <recent name="C:\codegym\module1\c0226g1\ss5_form_table\bai_tap\bai_2" />
+      <recent name="C:\codegym\module1\c0226g1\ss5_form_table\bai_tap\bai_1" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1772610104833</updated>
       <workItem from="1772610105891" duration="8858000" />
-      <workItem from="1772673021795" duration="15834000" />
+      <workItem from="1772673021795" duration="16208000" />
     </task>
     <servers />
   </component>
