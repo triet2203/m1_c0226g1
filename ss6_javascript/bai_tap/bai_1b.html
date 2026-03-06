@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculte</title>
+</head>
+<body>
+<input id="chieuDai" placeholder="Nhập chiều dài">
+<input id="chieuRong" placeholder="Nhập chiều rộng"><br>
+<button onclick="chuVi()">Tính chu vi</button>
+<button onclick="dienTich()">Tính diện tích</button>
+<h1 id="result"></h1>
+<script>
+    function chuVi() {
+        let dai = +document.getElementById('chieuDai').value;
+        let rong = +document.getElementById('chieuRong').value;
+        sum1 = (dai + rong) * 2;
+        document.getElementById('result').innerText = "Chu vi hình chữ nhật là: " + sum1;
+    }
+
+    function dienTich() {
+        let dai = +document.getElementById('chieuDai').value;
+        let rong = +document.getElementById('chieuRong').value;
+        sum2 = dai * rong;
+        document.getElementById('result').innerText = "Diện tích hình chữ nhật là: " + sum2;
+    }
+</script>
+</body>
+</html>
