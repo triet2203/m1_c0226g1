@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Average</title>
+</head>
+<body>
+<input id="diemLy" placeholder="Nhập điểm Lý">
+<input id="diemHoa" placeholder="Nhập điểm Hóa">
+<input id="diemSinh" placeholder="Nhập điểm Sinh"><br>
+<button onclick="tinh()">Tính</button>
+<h2 id="diemTb"></h2>
+<h2 id="tong"></h2>
+<script>
+    function tinh() {
+        let ly = +document.getElementById("diemLy").value;
+        let hoa = +document.getElementById("diemHoa").value;
+        let sinh = +document.getElementById("diemSinh").value;
+        let ketQua1 = (ly + hoa + sinh) / 3;
+        let ketQua2 = ly + hoa + sinh;
+        document.getElementById("diemTb").innerText = "Điểm trung bình của 3 môn là: " + ketQua1;
+        document.getElementById("tong").innerText = "Tổng điểm 3 môn là: " + ketQua2;
+    }
+</script>
+</body>
+</html>

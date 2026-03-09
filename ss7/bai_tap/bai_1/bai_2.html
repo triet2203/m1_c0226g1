@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="doC" placeholder="Nhập độ C">
+<button onclick="doF()">Nhập</button>
+<h2 id="ketQua"></h2>
+<script>
+    function doF() {
+        let c = +document.getElementById("doC").value;
+        f = (c * 1.8) + 32;
+        document.getElementById("ketQua").innerText = c + " độ C bằng " + f + " độ F";
+    }
+</script>
+</body>
+</html>

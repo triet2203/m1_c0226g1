@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+<h2>Tính chỉ số cân nặng</h2>
+<label>Nhập cân nặng: (kg)</label>
+<input type="text" id="weight"><br>
+<label style="margin-top: 10px">Nhập chiều cao: (m)</label>
+<input style="margin-top: 10px" type="text" id="height"><br>
+<button type="button" onclick="result()">Kiểm tra</button>
+<p id="display"></p>
+<script>
+    function result() {
+        let wei = +document.getElementById("weight").value;
+        let hei = +document.getElementById("height").value;
+        let BMI = wei / (hei ** 2);
+        if (BMI < 18.5) {
+            document.getElementById("display").innerText = "Chỉ số BMI của bạn là: " + BMI + ". Bạn đang gầy đó";
+        } else if (BMI < 25) {
+            document.getElementById("display").innerText = "Chỉ số BMI của bạn là: " + BMI + ". Bạn bình thường";
+        } else if (BMI < 30) {
+            document.getElementById("display").innerText = "Chỉ số BMI của bạn là: " + BMI + ". Bạn thừa cân";
+        } else {
+            document.getElementById("display").innerText = "Chỉ số BMI của bạn là: " + BMI + ". Bạn đang béo phì đó";
+        }
+    }
+</script>
+</body>
+</html>

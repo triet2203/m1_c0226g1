@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f32e273b-de70-4642-9536-791ffa818aa2" name="Changes" comment="" />
+    <list default="true" id="f32e273b-de70-4642-9536-791ffa818aa2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ss7/bai_tap/bai_1/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7/bai_tap/bai_1/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7/bai_tap/bai_2/bai_2b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7/bai_tap/bai_3/bai_3b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9/bai_tap/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9/bai_tap/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6_javascript/bai_tap/bai_1b.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss6_javascript/bai_tap/bai_1b.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3AYTiY04UVJzUM6tvgnKAUYVcjb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,6 +46,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
@@ -50,6 +60,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\codegym\module1\c0226g1\ss7\thuc_hanh" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -64,7 +79,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772768632659</updated>
-      <workItem from="1772768634237" duration="5809000" />
+      <workItem from="1772768634237" duration="16477000" />
+      <workItem from="1773018625870" duration="10585000" />
     </task>
     <servers />
   </component>
