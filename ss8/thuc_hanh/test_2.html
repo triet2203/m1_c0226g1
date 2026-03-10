@@ -13,22 +13,35 @@
         if (month > 0 && month <= 12) {
             if (month == 2) {
                 if (day > 0 && day <= 29) {
-                    alert("Ngày " + day + " tháng " + month + " năm " + year);
+                    if (day == 29) {
+                        alert("Ngày 1 tháng " + ++month + " năm " + year);
+                    } else {
+                        alert("Ngày " + ++day + " tháng " + month + " năm " + year);
+                    }
                 } else {
                     alert("Tháng " + month + " năm " + year + " không có ngày này");
                 }
-            } else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
-            {
+            } else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
                 if (day > 0 && day <= 31) {
-                    alert("Ngày " + day + " tháng " + month + " năm " + year);
+                    if (day == 31 && month == 12) {
+                        alert("Ngày 1 tháng 1 năm " + ++year);
+                    } else if (day == 31 && month != 12) {
+                        alert("Ngày 1 tháng " + ++month + " năm " + year);
+                    } else {
+                        alert("Ngày " + ++day + " tháng " + month + " năm " + year);
+                    }
                 } else {
                     alert("Tháng " + month + " năm " + year + " không có ngày này");
                 }
-            }
-        else
-            {
+            } else {
                 if (day > 0 && day <= 30) {
-                    alert("Ngày " + day + " tháng " + month + " năm " + year);
+                    if (day == 30 && month == 12) {
+                        alert("Ngày 1 tháng 1 năm " + ++year);
+                    } else if (day == 30 && month != 12) {
+                        alert("Ngày 1 tháng " + ++month + " năm " + year);
+                    } else {
+                        alert("Ngày " + ++day + " tháng " + month + " năm " + year);
+                    }
                 } else {
                     alert("Tháng " + month + " năm " + year + " không có ngày này");
                 }
@@ -40,22 +53,35 @@
         if (month > 0 && month <= 12) {
             if (month == 2) {
                 if (day > 0 && day <= 28) {
-                    alert("Ngày " + day + " tháng " + month + " năm " + year);
-                } else {
+                    if (day == 28) {
+                        alert("Ngày 1 tháng " + ++month + " năm " + year);
+                    } else {
+                        alert("Ngày " + ++day + " tháng " + month + " năm " + year);
+                    }
+                } else
                     alert("Tháng " + month + " năm " + year + " không có ngày này");
-                }
-            } else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
-            {
+            } else if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
                 if (day > 0 && day <= 31) {
-                    alert("Ngày " + day + " tháng " + month + " năm " + year);
+                    if (day == 31 && month == 12) {
+                        alert("Ngày 1 tháng 1 năm " + ++year);
+                    } else if (day == 31 && month != 12) {
+                        alert("Ngày 1 tháng " + ++month + " năm " + year);
+                    } else {
+                        alert("Ngày " + ++day + " tháng " + month + " năm " + year);
+                    }
                 } else {
                     alert("Tháng " + month + " năm " + year + " không có ngày này");
                 }
-            }
-        else
-            {
+
+            } else {
                 if (day > 0 && day <= 30) {
-                    alert("Ngày " + day + " tháng " + month + " năm " + year);
+                    if (day == 30 && month == 12) {
+                        alert("Ngày 1 tháng 1 năm " + ++year);
+                    } else if (day == 30 && month != 12) {
+                        alert("Ngày 1 tháng " + ++month + " năm " + year);
+                    } else {
+                        alert("Ngày " + ++day + " tháng " + month + " năm " + year);
+                    }
                 } else {
                     alert("Tháng " + month + " năm " + year + " không có ngày này");
                 }
