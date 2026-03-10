@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = +prompt("Nhập x");
+    let y = +prompt("Nhập y");
+    let z = +prompt("Nhập z");
+    if (x>0 && y>0 && z>0) {
+        if (x ** 2 == y ** 2 + z ** 2 || y ** 2 == x ** 2 + z ** 2 || z ** 2 == x ** 2 + y ** 2) {
+            alert("là 3 cạnh của tam giác vuông");
+        } else {
+            if (x + y > z && x + z > y && y + z > x) {
+                alert("chỉ là 3 cạnh của 1 tam giác");
+            } else {
+                alert("không phải là cạnh tam giác");
+            }
+        }
+    }
+    else {
+        alert("không phải là cạnh tam giác");
+    }
+</script>
+</body>
+</html>

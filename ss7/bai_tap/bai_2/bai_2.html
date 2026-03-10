@@ -10,11 +10,11 @@
     <label style="margin-left:50px"><b>From Currency</b></label>
     <label style="margin-left: 10px"><b>To Currency</b></label><br>
     <input style="width: 100px; height: 25px" name="amount" id="amount">
-    <select style="width: 80px; height: 30px" id="cur1">
+    <select style="width: 80px; height: 30px" id="currency1">
         <option>VND</option>
         <option>USD</option>
     </select>
-    <select style="margin-left: 39px; width: 80px; height: 30px" id="cur2">
+    <select style="margin-left: 39px; width: 80px; height: 30px" id="currency2">
         <option>VND</option>
         <option>USD</option>
     </select>
@@ -22,18 +22,18 @@
     <h2 id="display"></h2>
     <script>
         function convert() {
-            let a = +document.getElementById('amount').value;
-            let c1 = document.getElementById('cur1').value;
-            let c2 = document.getElementById('cur2').value;
+            let money = +document.getElementById('amount').value;
+            let change1 = document.getElementById('currency1').value;
+            let change2 = document.getElementById('currency2').value;
             let result;
-            if (c1 == "VND" && c2 == "USD") {
-                result = a / 23000;
-            } else if (c1 == "USD" && c2 == "VND") {
-                result = a * 23000;
+            if (change1 == "VND" && change2 == "USD") {
+                result = money / 23000;
+            } else if (change1 == "USD" && change2 == "VND") {
+                result = money * 23000;
             } else {
-                result = a;
+                result = money;
             }
-            document.getElementById("display").innerText = a + " " + c1 + " bằng " + result + " " + c2;
+            document.getElementById("display").innerText = money + " " + change1 + " bằng " + result + " " + change2;
         }
     </script>
 </form>

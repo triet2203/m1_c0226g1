@@ -9,34 +9,34 @@
     <h2>Caculator</h2>
     <input id="number1" placeholder="Nhập số thứ nhất">
     <input id="number2" placeholder="Nhập số thứ hai"><br>
-    <button type="button" onclick="addition()">Addition(+)</button>
-    <button type="button" onclick="subtraction()">Subtraction(-)</button>
-    <button type="button" onclick="multiplication()">Multiplication(x)</button>
-    <button type="button" onclick="division()">Division(/)</button>
+    <button type="button" onclick="plus()">Addition(+)</button>
+    <button type="button" onclick="minus()">Subtraction(-)</button>
+    <button type="button" onclick="multi()">Multiplication(x)</button>
+    <button type="button" onclick="divided()">Division(/)</button>
     <h2 id="result"></h2>
     <script>
-        function addition() {
+        function plus() {
             let num1 = +document.getElementById("number1").value;
             let num2 = +document.getElementById("number2").value;
             add = num1 + num2;
             document.getElementById("result").innerText = "Kết quả là: " + add;
         }
 
-        function subtraction() {
+        function minus() {
             let num1 = +document.getElementById("number1").value;
             let num2 = +document.getElementById("number2").value;
             sub = num1 - num2;
             document.getElementById("result").innerText = "Kết quả là: " + sub;
         }
 
-        function multiplication() {
+        function multi() {
             let num1 = +document.getElementById("number1").value;
             let num2 = +document.getElementById("number2").value;
             mul = num1 * num2;
             document.getElementById("result").innerText = "Kết quả là: " + mul;
         }
 
-        function division() {
+        function divided() {
             let num1 = +document.getElementById("number1").value;
             let num2 = +document.getElementById("number2").value;
             div = num1 / num2;
