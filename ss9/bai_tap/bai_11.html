@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary = +prompt("Nhập thu nhập cá nhân của bạn (triệu đồng)");
+    let tax;
+    if (salary <= 5) {
+        tax = 5 * 0.05;
+        alert("Thuế bạn phải trả là: " + tax + " triệu đồng");
+    } else if (salary <= 10) {
+        tax = 5 * 0.1;
+        alert("Thuế bạn phải trả là: " + tax + " triệu đồng");
+    } else if (salary <= 18) {
+        tax = 5 * 0.15;
+        alert("Thuế bạn phải trả là: " + tax + " triệu đồng");
+    } else if (salary <= 32) {
+        tax = 5 * 0.2;
+        alert("Thuế bạn phải trả là: " + tax + " triệu đồng");
+    } else if (salary <= 52) {
+        tax = 5 * 0.25;
+        alert("Thuế bạn phải trả là: " + tax + " triệu đồng");
+    } else if (salary <= 80) {
+        tax = 5 * 0.3;
+        alert("Thuế bạn phải trả là: " + tax + " triệu đồng");
+    } else {
+        tax = 5 * 0.35;
+        alert("Thuế bạn phải trả là: " + tax + " triệu đồng");
+    }
+</script>
+</body>
+</html>

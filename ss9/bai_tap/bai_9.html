@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = +prompt("Nhập a");
+    let num2 = +prompt("Nhập b");
+    let num3 = +prompt("Nhập c");
+    if (num1 > 0 && num2 > 0 && num3 > 0) {
+        if (num1 + num2 > num3 && num1 + num3 > num2 && num2 + num3 > num1) {
+            alert("Đây là 3 cạnh của 1 tam giác");
+        } else {
+            alert("Đây không phải là 3 cạnh của 1 tam giác");
+        }
+    } else {
+        alert("Đây không phải là 3 cạnh của 1 tam giác");
+    }
+</script>
+</body>
+</html>

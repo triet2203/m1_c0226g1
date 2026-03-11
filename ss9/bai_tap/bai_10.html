@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kwh = +prompt("Nhập mức điện tiêu thụ");
+    let fee;
+    if (kwh < 50) {
+        fee = kwh * 1984;
+        alert("Tiền điện phải trả là " + fee);
+    } else if (kwh < 100) {
+        fee = kwh * 2050;
+        alert("Tiền điện phải trả là " + fee);
+    } else if (kwh < 200) {
+        fee = kwh * 2380;
+        alert("Tiền điện phải trả là " + fee);
+    } else if (kwh < 300) {
+        fee = kwh * 2998;
+        alert("Tiền điện phải trả là " + fee);
+    } else if (kwh < 400) {
+        fee = kwh * 3350;
+        alert("Tiền điện phải trả là " + fee);
+    } else {
+        fee = kwh * 3460;
+        alert("Tiền điện phải trả là " + fee);
+    }
+</script>
+</body>
+</html>

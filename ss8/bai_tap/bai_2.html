@@ -10,37 +10,37 @@
 <button onclick="checkDay()">Tính số ngày</button>
 <p id="display"></p>
 <script>
-    let jan = "1";
-    let feb = "2";
-    let mar = "3";
-    let apr = "4";
-    let may = "5";
-    let jun = "6";
-    let jul = "7";
-    let aug = "8";
-    let sep = "9";
-    let oct = "10";
-    let nov = "11";
-    let dec = "12";
+    const Jan = 1;
+    const Feb = 2;
+    const Mar = 3;
+    const Apr = 4;
+    const May = 5;
+    const Jun = 6;
+    const Jul = 7;
+    const Aug = 8;
+    const Sep = 9;
+    const Oct = 10;
+    const Nov = 11;
+    const Dec = 12;
     function checkDay() {
-        let checkMonth = document.getElementById("month").value;
+        let checkMonth = +document.getElementById("month").value;
         switch (checkMonth) {
-            case jan:
-            case mar:
-            case may:
-            case jul:
-            case aug:
-            case oct:
-            case dec:
+            case Jan:
+            case Mar:
+            case May:
+            case Jul:
+            case Aug:
+            case Oct:
+            case Dec:
                 document.getElementById('display').innerText = "Tháng " + checkMonth + ' có 31 ngày';
                 break;
-            case feb:
+            case Feb:
                 document.getElementById('display').innerText = "Tháng " + checkMonth + ' có 28 hoặc 29 ngày';
                 break;
-            case apr:
-            case jun:
-            case sep:
-            case nov:
+            case Apr:
+            case Jun:
+            case Sep:
+            case Nov:
                 document.getElementById('display').innerText = "Tháng " + checkMonth + ' có 30 ngày';
                 break;
             default:

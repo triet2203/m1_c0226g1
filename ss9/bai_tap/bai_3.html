@@ -6,12 +6,11 @@
 </head>
 <body>
 <script>
-    let canh = +prompt("Nhập cạnh hình vuông");
-    let dienTich = canh ** 2;
-    if (canh > 0) {
-        alert("Diện tích hình vuông là " + dienTich);
-    }
-    else {
+    let edge = +prompt("Nhập cạnh hình vuông");
+    let area = edge ** 2;
+    if (edge > 0) {
+        alert("Diện tích hình vuông là " + area);
+    } else {
         alert("Nhập lại cạnh");
     }
 </script>
