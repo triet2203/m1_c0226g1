@@ -7,16 +7,16 @@
 <body>
 <h2>Tính chỉ số cân nặng</h2>
 <label>Nhập cân nặng: (kg)</label>
-<input type="text" id="weight"><br>
+<input type="text" id="weight1"><br>
 <label style="margin-top: 10px">Nhập chiều cao: (m)</label>
-<input style="margin-top: 10px" type="text" id="height"><br>
+<input style="margin-top: 10px" type="text" id="height1"><br>
 <button type="button" onclick="result()">Kiểm tra</button>
 <p id="display"></p>
 <script>
     function result() {
-        let wei = +document.getElementById("weight").value;
-        let hei = +document.getElementById("height").value;
-        let BMI = wei / (hei ** 2);
+        let weight = +document.getElementById("weight1").value;
+        let height = +document.getElementById("height1").value;
+        let BMI = weight / (height ** 2);
         if (BMI < 18.5) {
             document.getElementById("display").innerText = "Chỉ số BMI của bạn là: " + BMI + ". Bạn đang gầy đó";
         } else if (BMI < 25) {
