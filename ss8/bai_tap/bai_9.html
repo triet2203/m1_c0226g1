@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let percent = +prompt("Nhập tỷ lệ hoa hồng");
+    let revenue;
+    let money;
+    if (percent >= 0) {
+        revenue = prompt("Nhập doanh số bán hàng");
+        if (revenue > 0) {
+            money = percent / 100 * revenue;
+            alert("Hoa hồng nhận dc là " + money);
+        } else {
+            alert("Nhập lại");
+        }
+    } else {
+        alert("Nhập lại");
+    }
+</script>
+</body>
+</html>

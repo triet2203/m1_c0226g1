@@ -7,11 +7,15 @@
 <body>
 <script>
     let age = prompt("Nhập số tuổi của bạn")
-    if (age == 15) {
-        alert("Bạn đủ điều kiện học lớp 10");
+    if (age > 0) {
+        if (age == 15) {
+            alert("Bạn đủ điều kiện học lớp 10");
+        } else {
+            alert("Bạn không đủ điều kiện học lớp 10");
+        }
     }
     else {
-        alert("Bạn không đủ điều kiện học lớp 10");
+        alert("Nhập lại");
     }
 </script>
 </body>

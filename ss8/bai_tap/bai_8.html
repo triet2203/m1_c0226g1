@@ -6,10 +6,24 @@
 </head>
 <body>
 <script>
-  let score1 = prompt("Nhập điểm bài kiểm tra");
-  let score2 = prompt("Nhập điểm bài thi giữa kỳ");
-  let score3 = prompt("Nhập điểm bài thi cuối kỳ");
-  let avarage =
+    let score1 = +prompt("Nhập điểm bài kiểm tra");
+    let score2 = +prompt("Nhập điểm bài thi giữa kỳ");
+    let score3 = +prompt("Nhập điểm bài thi cuối kỳ");
+    let avarage = (score1 + score2 + score3) / 3;
+    if (score1 >= 0 && score2 >= 0 && score3 >= 0) {
+        if (avarage >= 9) {
+            alert("Giỏi");
+        } else if (avarage >= 7) {
+            alert("Khá");
+        } else if (avarage >= 5) {
+            alert("Trung bình");
+        } else {
+            alert("Yếu");
+        }
+    } else {
+        alert("Vui lòng nhập lại");
+    }
+
 </script>
 </body>
 </html>

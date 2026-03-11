@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fee = 25000;
+    let total;
+    let min = +prompt("Nhập số phút bạn gọi");
+    if (min > 0) {
+        if (min < 50) {
+            total = fee + (min * 600);
+            alert("Tổng cước của bạn là " + total);
+        } else if (min <= 200) {
+            total = fee + (50 * 600) + ((min - 50) * 400);
+            alert("Tổng cước của bạn là " + total);
+        } else {
+            total = fee + (50 * 600) + (150 * 400) + ((min - 200) * 200);
+            alert("Tổng cước của bạn là " + total);
+        }
+    }
+    else {
+        alert("Nhập lại");
+    }
+
+</script>
+</body>
+</html>
