@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input onclick="play()" type="button" value="Play">
+<script>
+    function play() {
+        let min = +prompt("Nhập số nhỏ nhất trong khoảng mà bạn muốn đoán");
+        let max = +prompt("Nhập số lớn nhất trong khoảng mà bạn muốn đoán");
+        let random = Math.floor(Math.random() * (max - min + 1)) + min;
+        let guess;
+        let count = 0;
+        while (count < 3) {
+            guess = +prompt("Hãy đoán trong khoảng " + min + " đến " + max);
+            if (guess < min || guess > max) {
+                alert("Bạn hãy đoán trong khoảng đã nhập");
+            } else if (guess > random) {
+                alert("Nhỏ hơn đi");
+            } else if (guess < random) {
+                alert("Lớn hơn đi");
+            } else {
+                alert("Bạn đã đoán đúng rồi, vỗ tay");
+                return;
+            }
+            count++;
+        }
+        alert("Bạn đã hết mất 3 lần đoán rồi, số bạn cần đoán là " + random);
+    }
+</script>
+</body>
+</html>
