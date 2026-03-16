@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("Nhập 1 số để tính giai thừa số đó");
+    let factorier = 1;
+    if (num > 0) {
+        for (let i = 1; i <= num; i++) {
+            factorier *= i;
+        }
+        document.writeln("Giai thừa của " + num + " là " + factorier);
+    } else {
+        alert("Nhập lại");
+    }
+</script>
+</body>
+</html>

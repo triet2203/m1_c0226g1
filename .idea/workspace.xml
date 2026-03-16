@@ -5,20 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f32e273b-de70-4642-9536-791ffa818aa2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/bai_9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/thuc_hanh/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss10/thuc_hanh/test_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_2/baI_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_2/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_2/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_2/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_2/bai_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss10/thuc_hanh/test_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9/bai_tap/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9/bai_tap/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_10.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/bai_tap/bai_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/bai_tap/luyen_tap_1/bai_9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/thuc_hanh/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/thuc_hanh/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/thuc_hanh/test_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/thuc_hanh/test_2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\codegym\module1\c0226g1\ss10\bai_tap\luyen_tap_1" />
       <recent name="C:\codegym\module1\c0226g1\ss8\bai_tap" />
       <recent name="C:\codegym\module1\c0226g1\ss7\thuc_hanh" />
     </key>
@@ -94,6 +100,7 @@
       <workItem from="1773191490995" duration="18229000" />
       <workItem from="1773281345598" duration="17730000" />
       <workItem from="1773314438707" duration="296000" />
+      <workItem from="1773363820801" duration="23035000" />
     </task>
     <servers />
   </component>

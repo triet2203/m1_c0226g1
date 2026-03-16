@@ -5,14 +5,61 @@
     <title>Title</title>
 </head>
 <body>
+<input type="button" onclick="menu()" value="Menu">
 <script>
-  let num = +prompt("Nhập 1 số");
-  let total = 0;
-  while (num != -1) {
-    //alert (number);
-    total += num;
-  }
-  alert (total);
+    let order = "";
+    let total = 0;
+    let cafe = 0;
+    let cacao = 0;
+    let orange = 0;
+
+    function
+    menu() {
+        while (true) {
+            let menu = prompt("-----------Menu------------\n" +
+                "Hãy nhập số để chọn đồ uống\n" +
+                "1. Cafe:       10k\n" +
+                "2. Cacao:      15k\n" +
+                "3. Nước cam:   20k\n" +
+                "4. Kết thúc\n" +
+                "-------------Danh sách đã chọn------------\n" +
+                order + "\n                                   Tổng tiền: " + total + " K")
+            switch (menu) {
+                case "1":
+                    cafe++;
+                    //order += "1. Cafe\n";
+                    total += 10;
+                    break;
+                case "2":
+                    cacao++;
+                    //order += "2. Cacao\n"
+                    total += 15;
+                    break;
+                case "3":
+                    orange++;
+                    //order += "3. Nước cam\n"
+                    total += 20;
+                    break;
+                case "4":
+                    alert("------Danh sách đã chọn---------\n" +
+                        order +
+                        "\n Tổng tiền: " + total + " K");
+                    return;
+                default:
+                    alert("Không có trong menu");
+            }
+            order = "";
+            if (cafe > 0) {
+                order += "1. Cafe x " + cafe + "\n";
+            }
+            if (cacao > 0) {
+                order += "2. Cacao x " + cacao + "\n";
+            }
+            if (orange > 0) {
+                order += "3. Orange x " + orange + "\n";
+            }
+        }
+    }
 </script>
 </body>
 </html>

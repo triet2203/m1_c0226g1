@@ -6,13 +6,29 @@
 </head>
 <body>
 <script>
+    // let num = +prompt("Nhập số bất kì");
+    // let total = 0;
+    // let i;
+    // for (i = 1; i <= num; i++) {
+    //     total += i;
+    // }
+    // alert(total)
+
     let num = +prompt("Nhập số bất kì");
-    let total = 0;
-    let i;
-    for (i = 1; i <= num; i++) {
-        total += i;
+    let num1 = 0;
+    let num2 = 1;
+    let count = 0;
+    while (count < num) {
+        if (num > 0) {
+            document.writeln(num1);3
+            let num3 = num1 + num2;
+            num1 = num2;
+            num2 = num3;
+            count++;
+        } else {
+            alert("Nhập lại");
+        }
     }
-    alert(total)
 
 </script>
 </body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let money = +prompt("Nhập số tiền ban đầu bạn gửi vào (VND)");
+    let months = +prompt("Nhập số tháng cho vay");
+    let interest = +prompt("Nhập lãi suất hàng tháng (%)");
+    if (money > 0 && months > 0 && interest > 0) {
+        let total = money;
+        for (let i = 1; i <= months; i++) {
+            total = total + total * interest / 100;
+        }
+        let result = total - money;
+        alert("Tiền lãi bạn nhận được là " + result);
+    } else {
+        alert("Nhập lại");
+    }
+</script>
+</body>
+</html>

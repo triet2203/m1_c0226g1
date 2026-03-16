@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let isContinue = true;
+    while (isContinue) {
+        let manage = prompt("-----------Quản lý sinh viên-----------\n" +
+            "Nhập số chọn chức năng\n" +
+            "1. Hiển thị danh sách sinh viên\n" +
+            "2. Thêm mới sinh viên\n" +
+            "3. Xóa sinh viên\n" +
+            "4. Kết thúc chương trình");
+        switch (manage) {
+            case "1":
+                alert("Chức năng 1");
+                break;
+            case "2":
+                alert("Chức năng 2");
+                break;
+            case "3":
+                alert("Chức năng 3");
+                break;
+            case "4":
+                let check = confirm("Bạn có muốn thoát không");
+                if (check) {
+                    isContinue = false;
+                }
+                break;
+            default:
+                alert("Không có chức năng này");
+        }
+    }
+</script>
+</body>
+</html>
