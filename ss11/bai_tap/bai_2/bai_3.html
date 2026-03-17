@@ -6,16 +6,17 @@
 </head>
 <body>
 <script>
-    let numbers = [10, 20, 40, 30, 50];
-    let average = 0;
-    let max = 0
+    let numbers = [-10, -20, -40, -30, -50, 60];
+    let sum = 0;
+    let max = numbers[0];
     for (let i = 0; i < numbers.length; i++) {
-        average += numbers[i];
+        sum += numbers[i];
         if (numbers[i] > max) {
             max = numbers[i];
         }
     }
-    document.writeln("Số lớn nhất là " + max + " . Trung bình của " + numbers.length + " số là " + average/numbers.length);
+    let average = sum/numbers.length;
+    document.writeln("Số lớn nhất là " + max + " . Trung bình của " + numbers.length + " số là " + average);
 </script>
 </body>
 </html>

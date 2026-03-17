@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers1 = [1, 2, 3, 4, 5];
+    let numbers2 = [1, 2, 3, 4, 5];
+    let same = true;
+    for (let i = 0; i < numbers1.length; i++) {
+        if (numbers1[i] !== numbers2[i]) {
+            same = false;
+            break;
+        }
+    }
+    if (same) {
+        document.writeln("Hai chuỗi giống nhau");
+    } else {
+        document.writeln("Hai chuỗi không giống nhau");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="display"></p>
+<button onclick="restart()">Chơi lại</button>
+<script>
+    let arr = new Array(10);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = new Array(10);
+        for (let j = 0; j < arr[i].length; j++) {
+            arr[i][j] = "";
+        }
+    }
+    let playerOne = true;
+    display();
+
+    function display() {
+        let tableString = "<table border='1'>";
+        for (let i = 0; i < 10; i++) {
+            tableString += "<tr>";
+            for (let j = 0; j < 10; j++) {
+                tableString += `<th onclick="play(${i}, ${j})" width="30" height="30">${arr[i][j]}</th>`;
+            }
+            tableString += "</tr>"
+        }
+        tableString += "</table>";
+        document.getElementById("display").innerHTML = tableString;
+    }
+
+    function play(i, j) {
+        if (arr[i][j] == "") {
+            if (playerOne) {
+                arr[i][j] = "X";
+                playerOne = !playerOne;
+                if (checkWin()) {
+                    alert("Bạn đã thắng");
+                }
+            } else {
+                arr[i][j] = "O";
+                playerOne = !playerOne;
+                if (checkWin()) {
+                    alert("Bạn đã thắng");
+                }
+            }
+        } else {
+            alert("Ô này đã đánh rồi nha");
+        }
+        display();
+    }
+
+    function checkWin() {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] == "X") {
+                    if (j + 2 < arr[i].length &&
+                        arr[i][j + 1] == "X" &&
+                        arr[i][j + 2] == "X") {
+                        return true;
+                    }
+                    if (i + 2 < arr.length &&
+                        arr[i + 1][j] == "X" &&
+                        arr[i + 2][j] == "X") {
+                        return true;
+                    }
+                    if (i + 2 < arr.length && j + 2 < arr[i].length &&
+                        arr[i + 1][j + 1] == "X" &&
+                        arr[i + 2][j + 2] == "X") {
+                        return true;
+                    }
+                    if (i - 2 >= 0 && j + 2 < arr[i].length &&
+                        arr[i - 1][j + 1] == "X" &&
+                        arr[i - 2][j + 2] == "X") {
+                        return true;
+                    }
+                } else if (arr[i][j] == "O") {
+                    if (j + 2 < arr[i].length &&
+                        arr[i][j + 1] == "O" &&
+                        arr[i][j + 2] == "O") {
+                        return true;
+                    }
+                    if (i + 2 < arr.length &&
+                        arr[i + 1][j] == "O" &&
+                        arr[i + 2][j] == "O") {
+                        return true;
+                    }
+                    if (i + 2 < arr.length && j + 2 < arr[i].length &&
+                        arr[i + 1][j + 1] == "O" &&
+                        arr[i + 2][j + 2] == "O") {
+                        return true;
+                    }
+                    if (i - 2 >= 0 && j + 2 < arr[i].length &&
+                        arr[i - 1][j + 1] == "O" &&
+                        arr[i - 2][j + 2] == "O") {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    function restart() {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                arr[i][j] = "";
+            }
+        }
+        playerOne = true;
+        display();
+    }
+</script>
+</body>
+</html>
