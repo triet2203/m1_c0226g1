@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nums1 = "025468";
+    let nums2 = nums1.split("");
+    let result = [];
+    for (let i = 0; i < nums2.length; i++) {
+        result.push(nums2[i]);
+
+        if (nums2[i] % 2 == 0 && nums2[i + 1] % 2 == 0) {
+            result.push("-");
+        }
+    }
+    document.writeln(result.join(""));
+</script>
+</body>
+</html>

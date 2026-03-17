@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result = [];
+    let max = 0;
+    let pos = -1;
+    for (let i = 0; i < 10; i++) {
+        let numbers = +prompt("Nhập số thứ " + (i + 1));
+        if (numbers > max) {
+            max = numbers;
+            pos = i + 1;
+        }
+    }
+    document.writeln("Số lớn nhất là: " + max + " nằm ở vị trí thứ " + pos);
+
+</script>
+</body>
+</html>

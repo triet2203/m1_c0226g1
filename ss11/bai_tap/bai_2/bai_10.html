@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="word" placeholder="Nhập từ tiếng Anh">
+<button onclick="search()">Dịch</button>
+<p id="result"></p>
+<script>
+    let english = ["array", "hello", "otter", "dragon", "smile"];
+    let vietnamese = ["mảng", "xin chào", "rái cá", "rồng", "cười"];
+
+    function search() {
+        let input = document.getElementById("word").value;
+        let index = english.indexOf(input);
+        if (index != -1) {
+            document.getElementById("result").innerHTML = vietnamese[index];
+        } else {
+            document.getElementById("result").innerHTML = "Không tìm thấy";
+        }
+    }
+</script>
+</body>
+</html>

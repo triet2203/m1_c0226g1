@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let numbers1 = [1,2,3,4,5,6,7,8,9,10];
+    // let numbers2 = [11,12,13,14,15,16,17,18,19,20];
+    // let numbers3 = Array(20);
+    // numbers3 = numbers2.concat(numbers1);
+    // document.writeln(numbers3);
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt("Nhập a[" + i + "]");
+    }
+    for (let i = 0; i < 10; i++) {
+        b[i] = +prompt("Nhập b[" + i + "]");
+    }
+    for (let i = 0; i < 10; i++) {
+        c[i] = a[i];
+    }
+    for (let i = 1; i < 10; i++) {
+        c[i + 10] = b[i];
+    }
+    document.writeln(c);
+</script>
+</body>
+</html>

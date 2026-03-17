@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    for (let i = 0; i < 10; i++) {
+        numbers[i] = +prompt("Nhập số thứ " + (i + 1));
+    }
+    numbers.sort((a, b) => b - a);
+    document.writeln(numbers);
+</script>
+</body>
+</html>
