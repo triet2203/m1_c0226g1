@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Danh sách sản phẩm</h2>
+<input type="text" id="display" placeholder="Nhập sản phẩm">
+<button type="button" onclick="addProduct()">Thêm</button>
+<div id="result"></div>
+<script>
+    let products = [];
+    display()
+    function addProduct() {
+        let value = document.getElementById("display").value;
+        if (value === "") {
+            alert("Bạn chưa nhập gì cả");
+        } else {
+        products.push(value);
+        display()
+        document.getElementById("display").value = "";
+        }
+    }
+
+    function deleteProduct(index) {
+        let conf = confirm("Bạn có muốn xóa không?")
+        if (conf) {
+        products.splice(index,1);
+        display();
+        }
+    }
+
+    function editProduct(index) {
+         let current = products[index];
+         let edit = prompt("Sửa sản phẩm: ",current);
+         if (edit === null) {
+             return
+         }
+         edit = edit.trim();
+         if (edit === "") {
+             alert("Không dc để trống");
+             return;
+         }
+         products[index] = edit;
+         display();
+    }
+
+    function display() {
+        let tableString = '<table border="1">'
+
+        tableString +=  '<tr>' +
+                        '<th>STT</th>' +
+                        '<th>Sản phẩm</th>' +
+                        '<th>Sửa</th>' +
+                        '<th>Xóa</th>' +
+                        '</tr>'
+        for (let i = 0; i < products.length; i++) {
+            tableString += `<tr>
+                            <td>${i+1}</td>
+                            <td>${products[i]}</td>
+                            <td><button onclick="editProduct(${i})">Sửa</button></td>
+                            <td><button onclick="deleteProduct(${i})">Xóa</button></td>
+                            </tr>`;
+        }
+        tableString += "</table>";
+        document.getElementById("result").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

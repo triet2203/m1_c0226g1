@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkPositiveInteger(number) {
+        if (number > 0 && number % 1 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let input = +prompt("Nhập 1 số bất kì");
+    if (checkPositiveInteger(input)) {
+        alert(input + " là số nguyên dương");
+    } else {
+        alert(input + " không phải là số nguyên dương");
+    }
+</script>
+</body>
+</html>

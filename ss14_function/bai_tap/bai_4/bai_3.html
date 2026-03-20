@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calculateFactorial(number) {
+        if (number < 0) {
+            alert("Nhập lại");
+            return;
+        }
+        let result = 1;
+        for (let i = 1; i <= number; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    let input = +prompt("Nhập số nguyên bất kì");
+    let display = calculateFactorial(input);
+    alert(input + "! = " + display);
+</script>
+</body>
+</html>

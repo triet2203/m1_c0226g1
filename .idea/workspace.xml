@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f32e273b-de70-4642-9536-791ffa818aa2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_3/bai_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_3/bai_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_3/bai_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_3/bai_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_3/bai_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_function/bai_tap/bai_4/bai_9.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +98,7 @@
       <workItem from="1773624266533" duration="18086000" />
       <workItem from="1773709492727" duration="20370000" />
       <workItem from="1773795839288" duration="14549000" />
+      <workItem from="1773882388116" duration="21805000" />
     </task>
     <servers />
   </component>

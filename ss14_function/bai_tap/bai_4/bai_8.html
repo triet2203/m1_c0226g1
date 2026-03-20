@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function reverseArray(arr) {
+        let n = arr.length;
+        for (let i = 0; i < Math.floor(n / 2); i++) {
+            let j = n - 1 - i;
+            let temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        return arr;
+    }
+
+    let input = prompt("Nhập số, cách nhau bởi dấu phẩy");
+    let result = input.split(",").map(Number);
+    alert(reverseArray(result));
+</script>
+</body>
+</html>
