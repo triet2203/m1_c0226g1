@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    class Temperature {
+        celcius;
+        constructor(celcius) {
+            if (celcius < -273) {
+                this.celcius = -273;
+            } else {
+                this.celcius = celcius;
+            }
+        }
+
+        toFahrenheit() {
+            return (this.celcius * 9 / 5) + 32;
+        }
+
+        toKelvin() {
+            return this.celcius + 273.15;
+        }
+    }
+
+    let c = +prompt("Nhập độ C")
+    let temp = new Temperature(c);
+    document.getElementById("result").innerHTML =   "Celcius: " + temp.celcius + "<br>" +
+                                                    "Fahrenheit: " + temp.toFahrenheit() + "<br>" +
+                                                    "Kelvin: " + temp.toKelvin()
+</script>
+</body>
+</html>
