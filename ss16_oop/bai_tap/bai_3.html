@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Danh sách sản phẩm</h2>
+<input type="text" id="display" placeholder="Nhập sản phẩm">
+<input type="text" id="price" placeholder="Nhập giá">
+<button type="button" onclick="addProduct()">Thêm</button>
+<div id="result"></div>
+<script>
+    class Product {
+        name;
+        price;
+        constructor(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+    }
+
+    let products = [];
+    display()
+
+    function addProduct() {
+        let value = document.getElementById("display").value;
+        let money = document.getElementById("price").value;
+        if (value === "" || money === "") {
+            alert("Nhập đầy đủ vào nha");
+        } else {
+            let newProduct = new Product(value, money);
+            products.push(newProduct);
+            display();
+            document.getElementById("display").value = "";
+            document.getElementById("price").value = "";
+        }
+    }
+
+    function deleteProduct(index) {
+        let conf = confirm("Bạn có muốn xóa không?")
+        if (conf) {
+            products.splice(index, 1);
+            display();
+        }
+    }
+
+    function editProduct(index) {
+        let current = products[index].name;
+        let edit = prompt("Sửa sản phẩm: ", current);
+        if (edit === null) {
+            return
+        }
+        edit = edit.trim();
+        if (edit === "") {
+            alert("Không dc để trống");
+            return;
+        }
+        products[index].name = edit;
+        display();
+    }
+
+    function display() {
+        let tableString = '<table border="1">'
+
+        tableString +=  '<tr>' +
+                            '<th>STT</th>' +
+                            '<th>Sản phẩm</th>' +
+                            '<th>Giá</th>' +
+                            '<th>Sửa</th>' +
+                            '<th>Xóa</th>' +
+                        '</tr>'
+        for (let i = 0; i < products.length; i++) {
+            tableString += `<tr>
+                                <td>${i + 1}</td>
+                                <td>${products[i].name}</td>
+                                <td>${products[i].price}</td>
+                                <td><button onclick="editProduct(${i})">Sửa</button></td>
+                                <td><button onclick="deleteProduct(${i})">Xóa</button></td>
+                            </tr>`;
+        }
+        tableString += "</table>";
+        document.getElementById("result").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>
