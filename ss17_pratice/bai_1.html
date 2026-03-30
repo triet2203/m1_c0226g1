@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số phần tử");
+    let array = [];
+    if (n > 0 && n <= 50 && n % 1 == 0) {
+        for (let i = 0; i < n; i++) {
+            let number = +prompt("Nhập số thứ " + (i + 1));
+            array.push(number);
+        }
+        document.writeln(array);
+        let sum = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (isPrime(i)) {
+                sum += array[i];
+            }
+        }
+        document.writeln("Tổng các phần tử có vị trí index là số nguyên tố: " + sum);
+    } else {
+        alert("Nhập lại");
+    }
+
+    function isPrime(n) {
+        if (n < 2) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true
+    }
+
+</script>
+</body>
+</html>

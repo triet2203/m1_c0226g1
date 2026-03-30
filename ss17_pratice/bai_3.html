@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(n) {
+        let numb1 = 0;
+        let numb2 = 1;
+        while (numb2 <= n) {
+            if (numb2 === n) {
+                return true;
+            }
+            let numb3 = numb1 + numb2;
+            numb1 = numb2;
+            numb2 = numb3;
+        }
+        return n === 0;
+    }
+
+    function findFibonacci(arr) {
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (isFibonacci(arr[i])) {
+                result.push(arr[i]);
+            }
+        }
+        result.sort((a, b) => a - b);
+        return result;
+    }
+
+    let input = [1, 3, 5, 8, 10, 11, 13, 0, 15];
+    let output = findFibonacci(input);
+    document.writeln(output);
+</script>
+</body>
+</html>

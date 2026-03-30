@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary = +prompt("Nhập lương của bạn (triệu đồng)");
+    if (salary >= 15) {
+        tax = 20 / 100 * salary;
+    } else if (salary >= 7) {
+        tax = 10 / 100 * salary;
+    } else {
+        tax = 5 / 100 * salary;
+    }
+    let money = salary - tax;
+    document.writeln("Thuế bạn phải nộp là " + tax + " triệu đồng <br>");
+    document.writeln("Số lương bạn thật sự nhận được là " + money + " triệu đồng");
+</script>
+</body>
+</html>

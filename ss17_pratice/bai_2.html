@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function countChar(text) {
+        let array = [];
+        let countUpper = 0;
+        let countLower = 0;
+        for (let i = 0; i < text.length; i++) {
+            let char = text[i];
+            if (char >= 'A' && char <= 'Z') {
+                countUpper++;
+            } else if (char >= 'a' && char <= 'z') {
+                countLower++;
+            }
+        }
+        array.push(countUpper, countLower);
+        document.writeln(array);
+    }
+
+    countChar("HellOCodeym");
+</script>
+</body>
+</html>

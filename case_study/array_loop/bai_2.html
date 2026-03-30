@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayA = [7, 2, 5, 3, 5, 3];
+    let arrayB = [7, 2, 5, 4, 6, 3, 5, 3];
+    let result = [];
+
+    function contain(arr, value) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === value) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    for (let i = 0; i < arrayB.length; i++) {
+        if (!contain(arrayA, arrayB[i]) && !contain(result, arrayB[i])) {
+            result.push(arrayB[i]);
+        }
+    }
+    console.log(result);
+</script>
+</body>
+</html>

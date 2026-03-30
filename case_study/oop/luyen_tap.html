@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="addStudent()">Thêm mới học viên</button>
+<button type="button" onclick="editStudent()">Sửa thông tin học viên</button>
+<button type="button" onclick="deleteStudent()">Xóa học viên</button>
+<div id="result"></div>
+<script>
+    class Student {
+        id;
+        name;
+        classs;
+        email;
+        birthday;
+        constructor(id, name, classs, email, birthday) {
+            this.id = id;
+            this.name = name;
+            this.classs = classs;
+            this.email = email;
+            this.birthday = birthday;
+        }
+    }
+    let listStudent = [];
+    listStudent.push(
+        new Student("HV-0001", "Nguyễn Văn A", "C1022G1", "nguyenvana@gmail.com", "01/01/2004"),
+        new Student("HV-0002", "Nguyễn Văn B", "C1122G1", "nguyenvanb@gmail.com", "02/02/2004"),
+        new Student("HV-0003", "Nguyễn Văn C", "C1222G1", "nguyenvanc@gmail.com", "03/03/2004"))
+    display();
+
+    function addStudent() {
+        let id = prompt("Nhập mã học viên");
+        let name = prompt("Nhập tên học viên");
+        let classs = prompt("Nhập lớp học viên");
+        let email = prompt("Nhập email học viên");
+        let birthday = prompt("Nhập ngày sinh học viên");
+
+        if (!id || !name || !classs || !email || !birthday) {
+            alert("Vui lòng nhập đầy đủ thông tin");
+            return;
+        }
+        let student = new Student(id, name, classs, email, birthday);
+        listStudent.push(student);
+        display();
+    }
+
+    function editStudent() {
+        let id = prompt("Nhập mã học viên cần sửa");
+        let index = -1;
+        for (let i = 0; i < listStudent.length; i++) {
+            if (listStudent[i].id === id) {
+                index = i;
+                break;
+            }
+        }
+        if (index === -1) {
+            alert("Mã học viên không tồn tại");
+            return;
+        }
+        let student = listStudent[index];
+        let newName = prompt("Nhập tên mới", student.name);
+        let newClass = prompt("Nhập lớp mới", student.classs);
+        let newEmail = prompt("Nhập email mới", student.email);
+        let newBirthday = prompt("Nhập ngày sinh mới", student.birthday);
+
+        student.name = newName;
+        student.classs = newClass;
+        student.email = newEmail;
+        student.birthday = newBirthday;
+
+        display();
+    }
+
+    function deleteStudent() {
+        let id = prompt("Nhập mã học viên cần xóa");
+        let index = -1;
+        for (let i = 0; i < listStudent.length; i++) {
+            if (listStudent[i].id === id) {
+                index = i;
+                break;
+            }
+        }
+        if (index === -1) {
+            alert("Mã học viên không tồn tại");
+            return;
+        }
+        let conf = confirm("Bạn có muốn xóa không?");
+        if (conf) {
+            listStudent.splice(index, 1);
+            display();
+        }
+
+    }
+
+    function display() {
+        let tableString = "<table border='1'>";
+        tableString += "<tr>" +
+                            "<th>Mã học viên</th>" +
+                            "<th>Tên</th>" +
+                            "<th>Lớp</th>" +
+                            "<th>Email</th>" +
+                            "<th>Ngày sinh</th>" +
+                        "</tr>";
+        for (let i = 0; i < listStudent.length; i++) {
+            tableString += `<tr>
+                                <td>${listStudent[i].id}</td>
+                                <td>${listStudent[i].name}</td>
+                                <td>${listStudent[i].classs}</td>
+                                <td>${listStudent[i].email}</td>
+                                <td>${listStudent[i].birthday}</td>
+                            </tr>`;
+        }
+        tableString += "</table>";
+        document.getElementById("result").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

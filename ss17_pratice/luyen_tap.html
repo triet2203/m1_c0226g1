@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5];
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    let min = Infinity;
+    let max = -Infinity;
+    for (let i = 0; i < arr.length; i++) {
+        let sum = total - arr[i]
+        if (sum < min) {
+            min = sum;
+        }
+        if (sum > max) {
+            max = sum;
+        }
+    }
+
+    console.log(min, max);
+</script>
+</body>
+</html>

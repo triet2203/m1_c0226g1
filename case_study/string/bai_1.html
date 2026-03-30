@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function normalizeString(str) {
+        str = str.toLowerCase().trim();
+        let words = str.split(/\s+/);
+        let result = "";
+        for (let i = 0; i < words.length; i++) {
+            let word = words[i];
+            let newWord = word[0].toUpperCase();
+            for (let j = 1; j < word.length; j++) {
+                newWord += word[j];
+            }
+            result += newWord;
+            if (i < words.length - 1) {
+                result += " ";
+            }
+        }
+        return result;
+    }
+
+    function findLongestWord(str) {
+        let words = str.split(" ");
+        let maxWord = words[0];
+        for (let i = 1; i < words.length; i++) {
+            if (words[i].length > maxWord.length) {
+                maxWord = words[i];
+            }
+        }
+        return maxWord;
+    }
+
+    function main() {
+        let input = prompt("Nhập chuỗi ký tự");
+        let normalized = normalizeString(input);
+        let longest = findLongestWord(normalized);
+        document.writeln("Chuỗi ban đầu là: " + input);
+        document.writeln("<br>Chuỗi sau chuẩn hóa là: " + normalized);
+        document.writeln("<br>Từ dài nhất trong chuỗi là: " + longest);
+    }
+
+    main();
+</script>
+</body>
+</html>

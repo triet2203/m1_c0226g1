@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f32e273b-de70-4642-9536-791ffa818aa2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss16_oop/bai_tap/bai_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/array2D/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/array2D/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/array2D/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/array_loop/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/array_loop/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/array_loop/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/array_loop/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/if_swich_case/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/if_swich_case/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/loop/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/loop/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/loop/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/oop/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/oop/luyen_tap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/string/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/string/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/string/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_pratice/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_pratice/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_pratice/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_pratice/luyen_tap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_pratice/luyen_tap2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/thuc_hanh/test_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/thuc_hanh/menu_simple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10/thuc_hanh/test_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10/thuc_hanh/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,38 +54,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.test_2b.html.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/codegym/module1/c0226g1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.test_2b.html.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/codegym/module1/c0226g1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\codegym\module1\c0226g1\case_study" />
       <recent name="C:\codegym\module1\c0226g1\ss11\bai_tap\bai_2" />
       <recent name="C:\codegym\module1\c0226g1\ss11\bai_tap\bai_1" />
       <recent name="C:\codegym\module1\c0226g1\ss10\bai_tap\luyen_tap_1" />
       <recent name="C:\codegym\module1\c0226g1\ss8\bai_tap" />
-      <recent name="C:\codegym\module1\c0226g1\ss7\thuc_hanh" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -93,7 +114,11 @@
       <workItem from="1773795839288" duration="14549000" />
       <workItem from="1773882388116" duration="21805000" />
       <workItem from="1773969015760" duration="10903000" />
-      <workItem from="1774227712572" duration="18241000" />
+      <workItem from="1774227712572" duration="20214000" />
+      <workItem from="1774314375545" duration="15363000" />
+      <workItem from="1774400572290" duration="16196000" />
+      <workItem from="1774487580239" duration="26369000" />
+      <workItem from="1774573685338" duration="25382000" />
     </task>
     <servers />
   </component>
