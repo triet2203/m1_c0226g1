@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số phần tử");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        let numbers = +prompt("Nhập số thứ " + (i + 1));
+        arr.push(numbers);
+    }
+    document.writeln(arr);
+
+    function countEvenNumber(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    function countOddNumber(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+        if (countEvenNumber(arr) == countOddNumber(arr)) {
+            alert("OK con dê");
+        } else {
+            alert("No OK nha");
+        }
+
+</script>
+</body>
+</html>

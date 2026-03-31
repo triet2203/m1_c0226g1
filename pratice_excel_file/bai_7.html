@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số phần tử");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        let number;
+        do {
+            number = +prompt("Nhập số thứ " + (i + 1));
+            if (number <= 10 || number >= 100) {
+                alert("Số phải >10 và <100");
+            }
+        }
+        while (number <= 10 || number >= 100);
+        arr.push(number);
+    }
+    document.writeln(arr);
+    let numbers = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 10 > Math.floor(arr[i] / 10) % 10) {
+            numbers.push(arr[i]);
+        }
+    }
+    document.writeln("<br>Kết quả: " + numbers);
+</script>
+</body>
+</html>

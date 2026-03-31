@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function checkString(str) {
+        let countUpper = 0;
+        let countLower= 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] >= "A" && str[i] <= "Z") {
+                countUpper++;
+            } else if (str[i] >= "a" && str[i] <= "z") {
+                countLower++;
+            }
+        }
+        return countUpper === countLower;
+    }
+
+    let str = "abcdBCAS12";
+    if (checkString(str)) {
+        alert("đúng");
+    } else {
+        alert("sai");
+    }
+</script>
+</body>
+</html>

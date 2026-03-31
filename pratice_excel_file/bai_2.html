@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkArray(arr) {
+        if (arr.length % 2 !== 0) {
+            return false;
+        }
+        let mid = arr.length / 2;
+        for (let i = 0; i < mid; i++) {
+            if (arr[i] ** 2 !== arr[i + mid]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let arr = [1, 2, 3, 1, 4, 9];
+    if (checkArray(arr))    {
+        alert("Đúng");
+    } else {
+        alert("Sai");
+    }
+</script>
+</body>
+</html>

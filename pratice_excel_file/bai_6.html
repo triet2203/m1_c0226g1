@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkString(str) {
+        let result = [];
+        let vowels = "aeiouAEIOU";
+        for (let i = 0; i < str.length; i++) {
+            if(vowels.includes(str[i])) {
+                result.push(str[i]);
+            }
+        }
+        return result;
+    }
+
+    let arr = "Hello World"
+    document.writeln(checkString(arr));
+</script>
+</body>
+</html>

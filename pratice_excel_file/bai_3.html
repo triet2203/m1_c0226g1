@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số phần tử");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        let numbers = prompt("Nhập phần tử thứ " + (i + 1));
+        arr.push(numbers);
+    }
+    document.writeln(arr);
+
+    function isSorted(arr) {
+        let increase = true;
+        let decrease = true;
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                increase = false;
+            }
+            if (arr[i] < arr[i + 1]) {
+                decrease = false;
+            }
+        }
+        return increase || decrease;
+    }
+
+    if (isSorted(arr)) {
+        alert("Đúng");
+    } else {
+        alert("Sai")
+    }
+
+
+</script>
+</body>
+</html>
